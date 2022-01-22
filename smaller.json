@@ -1,0 +1,74 @@
+{
+    "subject": "5252a9d3-61d5-54f1-88b9-fc259684420a",
+    "kills": [
+        {
+            "gameTime": 76374,
+            "roundTime": 46349,
+            "killer": "5252a9d3-61d5-54f1-88b9-fc259684420a",
+            "victim": "a6d45797-de6e-541e-8c48-fa6fb5b74721",
+            "victimLocation": {
+                "x": 9355,
+                "y": 2043
+            },
+            "assistants": [],
+            "playerLocations": [],
+            "finishingDamage": {
+                "damageType": "Weapon",
+                "damageItem": "E336C6B8-418D-9340-D77F-7A9E4CFE0702",
+                "isSecondaryFireMode": "False"
+            }
+        },
+        {
+            "gameTime": 79580,
+            "roundTime": 49555,
+            "killer": "5252a9d3-61d5-54f1-88b9-fc259684420a",
+            "victim": "018aa986-597b-5094-ab6f-78d32abccc3e",
+            "victimLocation": {
+                "x": 10142,
+                "y": 645
+            },
+            "assistants": [
+                "e5bcff64-850b-557a-a90d-135a11926505"
+            ],
+            "playerLocations": [],
+            "finishingDamage": {
+                "damageType": "Weapon",
+                "damageItem": "E336C6B8-418D-9340-D77F-7A9E4CFE0702",
+                "isSecondaryFireMode": "False"
+            }
+        }
+    ],
+    "damage": [
+        {
+            "receiver": "a6d45797-de6e-541e-8c48-fa6fb5b74721",
+            "damage": 110,
+            "legshots": 0,
+            "bodyshots": 2,
+            "headshots": 0
+        },
+        {
+            "receiver": "018aa986-597b-5094-ab6f-78d32abccc3e",
+            "damage": 55,
+            "legshots": 0,
+            "bodyshots": 1,
+            "headshots": 0
+        }
+    ],
+    "score": 355,
+    "economy": {
+        "loadoutValue": 1500,
+        "weapon": "E336C6B8-418D-9340-D77F-7A9E4CFE0702",
+        "armor": "",
+        "remaining": 0,
+        "spent": 0
+    },
+    "ability": {
+        "grenadeEffects": "None",
+        "ability1Effects": "None",
+        "ability2Effects": "None",
+        "ultimateEffects": "None"
+    },
+    "wasAfk": "False",
+    "wasPenalized": "False",
+    "stayedInSpawn": "False"
+}

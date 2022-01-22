@@ -1,0 +1,405 @@
+{
+    "matchId": "6fb9fc26-9b71-4f2c-9675-2fb5523230c9",
+    "mapId": "/Game/Maps/Duality/Duality",
+    "isRanked": "False",
+    "seasonId": "a16955a5-4ad0-f761-5e9e-389df1c892fb",
+    "teams": [
+        {
+            "teamId": "Red",
+            "won": "False",
+            "roundsPlayed": 5,
+            "roundsWon": 1,
+            "numPoints": 1
+        },
+        {
+            "teamId": "Blue",
+            "won": "True",
+            "roundsPlayed": 5,
+            "roundsWon": 4,
+            "numPoints": 4
+        }
+    ],
+    "roundResults": [
+        {
+            "roundNum": 0,
+            "roundResult": "Bomb defused",
+            "roundCeremony": "CeremonyDefault",
+            "winningTeam": "Blue",
+            "bombPlanter": "5d484dfa-7cbd-5dc4-8de6-f1aeb242d66b",
+            "bombDefuser": "5252a9d3-61d5-54f1-88b9-fc259684420a",
+            "plantRoundTime": 20937,
+            "plantPlayerLocations": [],
+            "plantLocation": {
+                "x": 10498,
+                "y": 1829
+            },
+            "plantSite": "A",
+            "defuseRoundTime": 60844,
+            "defusePlayerLocations": [],
+            "defuseLocation": {
+                "x": 10407,
+                "y": 1821
+            },
+            "playerStats": [
+                {
+                    "subject": "5252a9d3-61d5-54f1-88b9-fc259684420a",
+                    "kills": [
+                        {
+                            "gameTime": 76374,
+                            "roundTime": 46349,
+                            "killer": "5252a9d3-61d5-54f1-88b9-fc259684420a",
+                            "victim": "a6d45797-de6e-541e-8c48-fa6fb5b74721",
+                            "victimLocation": {
+                                "x": 9355,
+                                "y": 2043
+                            },
+                            "assistants": [],
+                            "playerLocations": [],
+                            "finishingDamage": {
+                                "damageType": "Weapon",
+                                "damageItem": "E336C6B8-418D-9340-D77F-7A9E4CFE0702",
+                                "isSecondaryFireMode": "False"
+                            }
+                        },
+                        {
+                            "gameTime": 79580,
+                            "roundTime": 49555,
+                            "killer": "5252a9d3-61d5-54f1-88b9-fc259684420a",
+                            "victim": "018aa986-597b-5094-ab6f-78d32abccc3e",
+                            "victimLocation": {
+                                "x": 10142,
+                                "y": 645
+                            },
+                            "assistants": [
+                                "e5bcff64-850b-557a-a90d-135a11926505"
+                            ],
+                            "playerLocations": [],
+                            "finishingDamage": {
+                                "damageType": "Weapon",
+                                "damageItem": "E336C6B8-418D-9340-D77F-7A9E4CFE0702",
+                                "isSecondaryFireMode": "False"
+                            }
+                        }
+                    ],
+                    "damage": [
+                        {
+                            "receiver": "a6d45797-de6e-541e-8c48-fa6fb5b74721",
+                            "damage": 110,
+                            "legshots": 0,
+                            "bodyshots": 2,
+                            "headshots": 0
+                        },
+                        {
+                            "receiver": "018aa986-597b-5094-ab6f-78d32abccc3e",
+                            "damage": 55,
+                            "legshots": 0,
+                            "bodyshots": 1,
+                            "headshots": 0
+                        }
+                    ],
+                    "score": 355,
+                    "economy": {
+                        "loadoutValue": 1500,
+                        "weapon": "E336C6B8-418D-9340-D77F-7A9E4CFE0702",
+                        "armor": "",
+                        "remaining": 0,
+                        "spent": 0
+                    },
+                    "ability": {
+                        "grenadeEffects": "None",
+                        "ability1Effects": "None",
+                        "ability2Effects": "None",
+                        "ultimateEffects": "None"
+                    },
+                    "wasAfk": "False",
+                    "wasPenalized": "False",
+                    "stayedInSpawn": "False"
+                }
+            ],
+            "roundResultCode": "Defuse"
+        },
+        {
+            "roundNum": 1,
+            "roundResult": "Bomb defused",
+            "roundCeremony": "CeremonyDefault",
+            "winningTeam": "Blue",
+            "bombPlanter": "018aa986-597b-5094-ab6f-78d32abccc3e",
+            "bombDefuser": "bf200b73-e1e2-5a0c-97a3-8ae20311049c",
+            "plantRoundTime": 17891,
+            "plantPlayerLocations": [],
+            "plantLocation": {
+                "x": 10373,
+                "y": 1747
+            },
+            "plantSite": "A",
+            "defuseRoundTime": 42198,
+            "defusePlayerLocations": [],
+            "defuseLocation": {
+                "x": 10457,
+                "y": 1905
+            },
+            "playerStats": [
+                {
+                    "subject": "5252a9d3-61d5-54f1-88b9-fc259684420a",
+                    "kills": [],
+                    "damage": [],
+                    "score": 0,
+                    "economy": {
+                        "loadoutValue": 1950,
+                        "weapon": "910BE174-449B-C412-AB22-D0873436B21B",
+                        "armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+                        "remaining": 0,
+                        "spent": 0
+                    },
+                    "ability": {
+                        "grenadeEffects": "None",
+                        "ability1Effects": "None",
+                        "ability2Effects": "None",
+                        "ultimateEffects": "None"
+                    },
+                    "wasAfk": "False",
+                    "wasPenalized": "False",
+                    "stayedInSpawn": "False"
+                }
+            ],
+            "roundResultCode": "Defuse"
+        },
+        {
+            "roundNum": 2,
+            "roundResult": "Bomb defused",
+            "roundCeremony": "CeremonyDefault",
+            "winningTeam": "Blue",
+            "bombPlanter": "5d484dfa-7cbd-5dc4-8de6-f1aeb242d66b",
+            "bombDefuser": "bf200b73-e1e2-5a0c-97a3-8ae20311049c",
+            "plantRoundTime": 39097,
+            "plantPlayerLocations": [],
+            "plantLocation": {
+                "x": 11092,
+                "y": -4810
+            },
+            "plantSite": "B",
+            "defuseRoundTime": 64383,
+            "defusePlayerLocations": [],
+            "defuseLocation": {
+                "x": 11059,
+                "y": -4700
+            },
+            "playerStats": [
+                {
+                    "subject": "5252a9d3-61d5-54f1-88b9-fc259684420a",
+                    "kills": [],
+                    "damage": [
+                        {
+                            "receiver": "5f8192dc-1f3b-5e65-bb17-ae4e88f02b57",
+                            "damage": 102,
+                            "legshots": 2,
+                            "bodyshots": 1,
+                            "headshots": 0
+                        }
+                    ],
+                    "score": 102,
+                    "economy": {
+                        "loadoutValue": 4900,
+                        "weapon": "63E6C2B6-4A8E-869C-3D4C-E38355226584",
+                        "armor": "822BCAB2-40A2-324E-C137-E09195AD7692",
+                        "remaining": 0,
+                        "spent": 0
+                    },
+                    "ability": {
+                        "grenadeEffects": "None",
+                        "ability1Effects": "None",
+                        "ability2Effects": "None",
+                        "ultimateEffects": "None"
+                    },
+                    "wasAfk": "False",
+                    "wasPenalized": "False",
+                    "stayedInSpawn": "False"
+                }
+            ],
+            "roundResultCode": "Defuse"
+        },
+        {
+            "roundNum": 3,
+            "roundResult": "Eliminated",
+            "roundCeremony": "CeremonyDefault",
+            "winningTeam": "Red",
+            "plantRoundTime": 0,
+            "plantPlayerLocations": "None",
+            "plantLocation": {
+                "x": 0,
+                "y": 0
+            },
+            "plantSite": "",
+            "defuseRoundTime": 0,
+            "defusePlayerLocations": "None",
+            "defuseLocation": {
+                "x": 0,
+                "y": 0
+            },
+            "playerStats": [
+                {
+                    "subject": "5252a9d3-61d5-54f1-88b9-fc259684420a",
+                    "kills": [],
+                    "damage": [
+                        {
+                            "receiver": "018aa986-597b-5094-ab6f-78d32abccc3e",
+                            "damage": 15,
+                            "legshots": 0,
+                            "bodyshots": 3,
+                            "headshots": 1
+                        }
+                    ],
+                    "score": 15,
+                    "economy": {
+                        "loadoutValue": 850,
+                        "weapon": "42DA8CCC-40D5-AFFC-BEEC-15AA47B42EDA",
+                        "armor": "",
+                        "remaining": 0,
+                        "spent": 0
+                    },
+                    "ability": {
+                        "grenadeEffects": "None",
+                        "ability1Effects": "None",
+                        "ability2Effects": "None",
+                        "ultimateEffects": "None"
+                    },
+                    "wasAfk": "False",
+                    "wasPenalized": "False",
+                    "stayedInSpawn": "False"
+                }
+            ],
+            "roundResultCode": "Elimination"
+        },
+        {
+            "roundNum": 4,
+            "roundResult": "Eliminated",
+            "roundCeremony": "CeremonyDefault",
+            "winningTeam": "Blue",
+            "bombPlanter": "51109598-8857-5e64-bf7e-6db288493849",
+            "plantRoundTime": 40052,
+            "plantPlayerLocations": [],
+            "plantLocation": {
+                "x": 11189,
+                "y": -5200
+            },
+            "plantSite": "B",
+            "defuseRoundTime": 0,
+            "defusePlayerLocations": "None",
+            "defuseLocation": {
+                "x": 0,
+                "y": 0
+            },
+            "playerStats": [
+                {
+                    "subject": "5252a9d3-61d5-54f1-88b9-fc259684420a",
+                    "kills": [
+                        {
+                            "gameTime": 401426,
+                            "roundTime": 42710,
+                            "killer": "5252a9d3-61d5-54f1-88b9-fc259684420a",
+                            "victim": "5d484dfa-7cbd-5dc4-8de6-f1aeb242d66b",
+                            "victimLocation": {
+                                "x": 10948,
+                                "y": -6006
+                            },
+                            "assistants": [],
+                            "playerLocations": [],
+                            "finishingDamage": {
+                                "damageType": "Weapon",
+                                "damageItem": "55D8A0F4-4274-CA67-FE2C-06AB45EFDF58",
+                                "isSecondaryFireMode": "True"
+                            }
+                        }
+                    ],
+                    "damage": [
+                        {
+                            "receiver": "5d484dfa-7cbd-5dc4-8de6-f1aeb242d66b",
+                            "damage": 132,
+                            "legshots": 0,
+                            "bodyshots": 1,
+                            "headshots": 1
+                        }
+                    ],
+                    "score": 195,
+                    "economy": {
+                        "loadoutValue": 2650,
+                        "weapon": "55D8A0F4-4274-CA67-FE2C-06AB45EFDF58",
+                        "armor": "4DEC83D5-4902-9AB3-BED6-A7A390761157",
+                        "remaining": 0,
+                        "spent": 0
+                    },
+                    "ability": {
+                        "grenadeEffects": "None",
+                        "ability1Effects": "None",
+                        "ability2Effects": "None",
+                        "ultimateEffects": "None"
+                    },
+                    "wasAfk": "False",
+                    "wasPenalized": "False",
+                    "stayedInSpawn": "False"
+                }
+            ],
+            "roundResultCode": "Elimination"
+        }
+    ],
+    "players": {
+        "subject": "5252a9d3-61d5-54f1-88b9-fc259684420a",
+        "gameName": "rushiiii",
+        "tagLine": "NA1",
+        "platformInfo": {
+            "platformType": "PC",
+            "platformOS": "Windows",
+            "platformOSVersion": "10.0.19042.1.256.64bit",
+            "platformChipset": "Unknown"
+        },
+        "teamId": "Blue",
+        "partyId": "19aead0e-8235-4912-9075-711b79980226",
+        "characterId": "f94c3b30-42be-e959-889c-5aa313dba261",
+        "stats": {
+            "score": 667,
+            "roundsPlayed": 5,
+            "kills": 3,
+            "deaths": 2,
+            "assists": 1,
+            "playtimeMillis": 405852,
+            "abilityCasts": {
+                "grenadeCasts": 3,
+                "ability1Casts": 1,
+                "ability2Casts": 0,
+                "ultimateCasts": 0
+            }
+        },
+        "roundDamage": [
+            {
+                "round": 0,
+                "receiver": "a6d45797-de6e-541e-8c48-fa6fb5b74721",
+                "damage": 110
+            },
+            {
+                "round": 0,
+                "receiver": "018aa986-597b-5094-ab6f-78d32abccc3e",
+                "damage": 55
+            },
+            {
+                "round": 2,
+                "receiver": "5f8192dc-1f3b-5e65-bb17-ae4e88f02b57",
+                "damage": 102
+            },
+            {
+                "round": 3,
+                "receiver": "018aa986-597b-5094-ab6f-78d32abccc3e",
+                "damage": 15
+            },
+            {
+                "round": 4,
+                "receiver": "5d484dfa-7cbd-5dc4-8de6-f1aeb242d66b",
+                "damage": 132
+            }
+        ],
+        "competitiveTier": 0,
+        "playerCard": "c89194bd-4710-b54e-8d6c-60be6274fbb2",
+        "playerTitle": "42e2f97d-4e69-274c-589c-0fbdeb397df9",
+        "accountLevel": 8,
+        "sessionPlaytimeMinutes": 1
+    }
+}
