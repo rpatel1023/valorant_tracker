@@ -1,5 +1,6 @@
+from collections import Counter
 from valclient import Client
-from match import deconstructMatch, getAverageRoundDamage, getAverageRoundKills
+from match import deconstructMatch, getTotalMatchKills
 import json
 import os
 import shutil
@@ -36,6 +37,24 @@ def getMatchDetails(match_id):
         obj = json.loads(data)
     file.close()
     return obj
+
+# def getSimplifiedMatchDetails(match_id):
+#     with open(f'./matches/{match_id}.json') as file:
+#         data = file.read()
+#         obj = json.loads(data)
+#     file.close()
+#     simple_match = simplifiedMatchStats(obj)
+#     return simple_match
+
+def getAggregateWeaponKills():
+    match_list = getMatchIDs()
+    kills = {'kills': []}
+    for match_id in match_list['match_ids']:
+        match_data = getMatchDetails(match_id)
+        kills['kills'].append(getTotalMatchKills(match_data))
+    mylist = kills['kills']
+    mylist = sum(mylist, [])
+    return Counter(mylist)
 
 
 shutil.rmtree('./matches')

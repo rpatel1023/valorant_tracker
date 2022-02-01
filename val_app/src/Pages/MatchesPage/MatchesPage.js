@@ -26,29 +26,28 @@ async function getMatchIds() {
     }
 }
 
-async function getSubjectId() {
+async function getWeaponKills() {
     try {
-        const res = await axios.get(`/subject`)
-        // console.log(res)
-        return res.data.subject
+        const res = await axios.get(`/weaponkills`)
+        // console.log(res.data)
+        return res.data
     }
     catch (error) {
         console.error(error.response.data)
     }
 }
 
-
 function MatchesPage() {
     const [matchIds, setMatchIds] = useState([])
     const [matchObjects, setMatchObjects] = useState([])
-    const [subjectId, setSubjectId] = useState([])
+    const [weaponKills, setWeaponKills] = useState([])
 
     useEffect(async () => {
         const ids = await getMatchIds()
         setMatchIds(ids)
+        const weapon_kills = await getWeaponKills()
+        setWeaponKills(weapon_kills)
 
-        const subject_id = await getSubjectId()
-        setSubjectId(subject_id)
 
         let promises = []
         for (let i=0; i<ids.length; i++) {
@@ -64,9 +63,7 @@ function MatchesPage() {
 
     function renderObjects(obj) {
         return (
-            <Col>
-                <GameObject details={obj} />
-            </Col>
+            <GameObject details={obj} />
         )
     }
     return (
@@ -74,8 +71,12 @@ function MatchesPage() {
             <h1>matches page</h1>
             {/* {matchIds.map(renderIds)} */}
             <Container>
-                <Row>
+                <Row>                    
                     {matchObjects.map(renderObjects)}
+                    {/* <h3>Kills by weapon for last 15 matches</h3>
+                    {Object.entries(weaponKills)
+                .map(([key, value]) => <p>{key}: {value}</p>)} */}
+
                 </Row>
             </Container>
         </div>

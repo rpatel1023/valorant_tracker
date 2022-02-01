@@ -1,6 +1,4 @@
-
-
-from tkinter.constants import Y
+from collections import Counter
 
 
 list_of_keys = ['matchId', 'mapId', 'queueId', 'isRanked', 'seasonId', 'teams', 'roundResults', 'queueID', 'gameMode']
@@ -24,9 +22,7 @@ weapons_dict = {
     "A03B24D3-4319-996D-0F8C-94BBFBA1DFC7": "Operator",
     "2F59173C-4BED-B6C3-2191-DEA9B58BE9C7": "Tactical Knife"
 }
-class Match:
-    def __init__(self, id):
-        self.id = id
+
 
 
 def deconstructMatch(match, subject):
@@ -62,8 +58,6 @@ def deconstructMatch(match, subject):
 
     return d_match
 
-
-
 def getAverageRoundDamage(round):
     stats = round['playerStats'][0]
     damage = 0
@@ -83,19 +77,35 @@ def getAverageRoundDamage(round):
         print("Total Headshots: " + str(headshots))
     else: 
         print("u hit nobody lol trash")
-    # print(stats)
 
-def getAverageRoundKills(round):
+def getAverageRoundKills(round, kills_list):
     stats = round['playerStats'][0]
-    res = []
     if len(stats['kills']) > 0:
         for kill in stats['kills']:
-            x_cord = kill['victimLocation']['x']
-            y_cord = kill['victimLocation']['y']
-            weapon = weapons_dict[kill['finishingDamage']['damageItem']]
-            print(f'Killed player at x:{x_cord}, y:{y_cord} using {weapon}')
-            res = [weapon, x_cord, y_cord]
-            return res
-    else:
-        print("lol u didn't kill any1 trash")     
-        return res
+            try:
+                weapon = weapons_dict[kill['finishingDamage']['damageItem']]
+            except KeyError: 
+                print(kill['finishingDamage']['damageItem'])
+            kills_list.append(weapon)
+
+    return kills_list
+
+def getTotalMatchKills(match_details):
+    kills_list = []
+    for round in match_details['roundResults']:
+        getAverageRoundKills(round, kills_list)
+        
+    return kills_list
+
+# def simplifiedMatchStats(match_obj):
+#     simple_match = {}
+#     simple_match['queueID'] = match_obj['queueID']
+#     simple_match['mapId'] = match_obj['mapId']
+#     user_team = match_obj['players']['teamId']
+#     simple_match['isWinner'] = 'false'
+#     for team in match_obj['teams']:
+#         if (team['won'] == "true") and (team['teamId'] == user_team):
+#             simple_match['isWinner'] = 'true'
+#     simple_match['players'] = match_obj['players']
+
+#     return simple_match
