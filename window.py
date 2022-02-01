@@ -1,55 +1,34 @@
+from logging import root
 import tkinter as tk
 from valclient import Client
 from PIL import ImageTk, Image
 from match import deconstructMatch, getAverageRoundKills, getAverageRoundDamage
+from main import *
 
-client = Client(region="na")
-client.activate()
+global match_ids
 
+def hello():
+    match_ids = getMatchIDs()
 
-matches = client.fetch_match_history()
-matches = matches["History"]
-match_ids = []
-for match in matches:
-    match_ids.append(match['MatchID'])
+def app():
+    global root
+    root = tk.Tk()
 
-subject_id = client.fetch_account_xp()['Subject']
+    root.title("Valorant Tracker")
+    root.geometry("530x300+1300+290")
+    root.configure(bg="#dc3d4b")
 
+    #options
+    option1= tk.Label(root, text="Get Data for Match")
+    option1.configure(bg="#dc3d4b", fg="white", font=("Open Sans", 14), pady=4)
+    option1.grid(row=1,column=3)
 
-current_match = client.fetch_match_details(match_id=match_ids[4])
-# print(current_match)
-updated_match = deconstructMatch(current_match, subject_id)
-
-# for round in updated_match['roundResults']:
-#     round_num = str(round['roundNum'] + 1)
-#     print(f"Round Damage Stats for Round {round_num}")
-#     getAverageRoundDamage(round)
-#     print(f"Kills Achieved in Round {round_num}")
-#     getAverageRoundKills(round)
-# # print(updated_match)
-
-
-#This creates the main window of an application
-window = tk.Tk()
-window.title("kill tracker")
-# window.geometry("300x300")
-window.configure(background='blue')
-
-res = getAverageRoundKills(updated_match['roundResults'][0])
-print(res)
-path = f"./resources/{res[0]}.png"
-
-#Creates a Tkinter-compatible photo image, which can be used everywhere Tkinter expects an image object.
-img = ImageTk.PhotoImage(Image.open(path))
-
-#The Label widget is a standard Tkinter widget used to display a text or image on the screen.
-panel = tk.Label(window, image = img)
-label = tk.Label(window, text=f'kill at x:{res[1]}, y:{res[2]}')
-label.pack(ipadx=10, ipady=10)
+    #buttons
+    dataButton = tk.Button(root, text='Get Data', command=hello)
+    dataButton.configure(bg="white", fg="black", font=("Open Sans", 14), pady=4)
+    dataButton.grid(row=3, column=3)
+    root.mainloop()
 
 
-#The Pack geometry manager packs widgets in rows or colu    mns.
-panel.pack(side = "bottom", fill = "both", expand = "yes")
-
-#Start the GUI
-window.mainloop()
+if __name__ == "__main__":
+    app()

@@ -3,7 +3,7 @@
 from tkinter.constants import Y
 
 
-list_of_keys = ['matchId', 'mapId', 'queueId', 'isRanked', 'seasonId', 'teams', 'roundResults']
+list_of_keys = ['matchId', 'mapId', 'queueId', 'isRanked', 'seasonId', 'teams', 'roundResults', 'queueID', 'gameMode']
 weapons_dict = {
     "29A0CFAB-485B-F5D5-779A-B59F85E204A8": "Classic",
     "42DA8CCC-40D5-AFFC-BEEC-15AA47B42EDA": "Shorty",
