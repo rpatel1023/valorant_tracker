@@ -69,9 +69,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email`, `email_client`, `project_title`, `project_description`
+This project is my own attempt at becoming comfortable with the Valorant Client API, and keeping track of my performance as I play Valorant.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -79,14 +77,11 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Built With
 
-* [Next.js](https://nextjs.org/)
 * [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+* [Electron.js](https://www.electronjs.org/)
+* [Flask](https://flask.palletsprojects.com/en/2.0.x/)
+* [React Bootstrap](https://react-bootstrap.github.io/)
+* [valclient](https://github.com/colinhartigan/valclient.py)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
