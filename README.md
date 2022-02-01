@@ -53,10 +53,6 @@ This project is my own attempt at becoming comfortable with the Valorant Client 
 * [React Bootstrap](https://react-bootstrap.github.io/)
 * [valclient](https://github.com/colinhartigan/valclient.py)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
 <!-- GETTING STARTED -->
 ## Getting Started
 
@@ -66,12 +62,14 @@ This project is built mainly through ReactJS and Python, requiring `npm 8.x.x+` 
 
 To run the React App, cd into `val_app` and run
 * npm
+
   ```sh
   npm install
   npm start
   ```
 To start the Flask API, at the root directory run
 * python
+
   ```sh
   pip install -r requirements.txt
   python ./api.py
@@ -83,4 +81,3 @@ Major credits to valclient and the valorant-api-docs, for making my life easier
 * [valclient](https://github.com/colinhartigan/valclient.py)
 * [valorant-api-docs](https://github.com/techchrism/valorant-api-docs)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
