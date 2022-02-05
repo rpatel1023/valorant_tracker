@@ -83,12 +83,9 @@ npm run electron-pack
 Then, navigate to `val_app/dist` and run  `val_app Setup 0.1.0.exe` to install
 
 ## Screenshots/Demo
-Individual match breakdowns
-<br/>
+
 ![demo_2](https://github.com/rpatel1023/valorant_tracker/blob/master/images/Demo_2.png?raw=true)
 ![demo_3](https://github.com/rpatel1023/valorant_tracker/blob/master/images/Demo_3.png?raw=true)
-Aggregate match data
-<br/>
 ![demo_1](https://github.com/rpatel1023/valorant_tracker/blob/master/images/Demo_1.png?raw=true)
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
