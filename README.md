@@ -82,7 +82,9 @@ npm run electron-pack
 ```
 Then, navigate to `val_app/dist` and run  `val_app Setup 0.1.0.exe` to install
 
-
+### Screenshots/Demo
+[!demo_2](https://github.com/rpatel1023/valorant_tracker/blob/master/images/Demo_2.png?raw=true)
+[!demo_1](https://github.com/rpatel1023/valorant_tracker/blob/master/images/Demo_1.png?raw=true)
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 Major credits to valclient and the valorant-api-docs, for making my life easier
