@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { Container, Col, Row } from 'react-bootstrap';
-import axios from "axios";
+import { Container, Col, Row, Image } from 'react-bootstrap';
+import images from "../../components/Images/Images";
 import GameObject from '../../components/GameObject/GameObject';
+import axios from "axios";
 import './MatchesPage.css'
 
 async function getMatchDetails(id) {
     try {
-        const res = await axios.get(`/match_details/${id}`)
+        const res = await axios.get(`http://127.0.0.1:5000/match_details/${id}`)
         // console.log(res.data)
         return res.data
     }
@@ -17,7 +18,7 @@ async function getMatchDetails(id) {
 
 async function getMatchIds() {
     try {
-        const res = await axios.get(`/matches`)
+        const res = await axios.get(`http://127.0.0.1:5000/matches`)
         // console.log(res)
         return res.data.match_ids
     }
@@ -28,7 +29,7 @@ async function getMatchIds() {
 
 async function getWeaponKills() {
     try {
-        const res = await axios.get(`/weaponkills`)
+        const res = await axios.get(`http://127.0.0.1:5000/weaponkills`)
         // console.log(res.data)
         return res.data
     }
@@ -68,15 +69,29 @@ function MatchesPage() {
     }
     return (
         <div>
-            <h1>matches page</h1>
+            <br/>
+            <h1 style={{ color: 'white', fontFamily: 'Rajdhani', fontWeight:'bold', fontSize:'50px' }}>Matches</h1>
+            <br/>
             {/* {matchIds.map(renderIds)} */}
             <Container>
-                <Row>                    
+                <Row className="g-2" md={3}>                    
                     {matchObjects.map(renderObjects)}
-                    {/* <h3>Kills by weapon for last 15 matches</h3>
-                    {Object.entries(weaponKills)
-                .map(([key, value]) => <p>{key}: {value}</p>)} */}
-
+                </Row>
+            </Container>
+            <br/>
+            <br/>
+            <Container>
+                <Row style={{display: 'flex', justifyContent: 'center', alignItems:'center', color: 'white', fontFamily: 'Rajdhani'}}>
+                        <h3 style={{fontSize: '50px', fontWeight: 'bold'}}>Kills by weapon for last 15 matches</h3>
+                        <Row md={2} style={{overflow: 'scroll', height: '80vh', padding:'50px'}}>                      
+                            {Object.entries(weaponKills)
+                        .map(([key, value]) =>
+                          <h4 style={{}}>
+                              <Image style={{width: '55%', height: '80%', padding: '10px', margin: '10px'}} src={images[key]}/>
+                              {key}: {value}
+                          </h4> )}
+                        </Row>
+                        
                 </Row>
             </Container>
         </div>

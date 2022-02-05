@@ -6,7 +6,7 @@ import './HomePage.css'
 function HomePage() {
     return (
         <div> 
-            <h1>home page</h1>
+            <h1 style={{ color: 'white' }}>home page</h1>
             <Link to='/tracker' className='btn btn-primary'>Tracker</Link>
         </div>
         
