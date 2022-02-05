@@ -58,14 +58,16 @@ This project is my own attempt at becoming comfortable with the Valorant Client 
 
 This project is built mainly through ReactJS and Python, requiring `npm 8.x.x+` and `Python 3.7.x+`
 
-### Prerequisites
+### Usage
 
-To run the React App, cd into `val_app` and run
+**Valorant must be open and running in the background for the Flask API to receive match data**
+
+To run the Electron App, cd into `val_app` and run
 * npm
 
   ```sh
   npm install
-  npm start
+  npm run electron-dev
   ```
 To start the Flask API, at the root directory run
 * python
@@ -74,6 +76,12 @@ To start the Flask API, at the root directory run
   pip install -r requirements.txt
   python ./api.py
   ````
+To generate a distributable executable, cd into `val_app` and run
+```sh
+npm run electron-pack
+```
+Then, navigate to `val_app/dist` and run  `val_app Setup 0.1.0.exe` to install
+
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
