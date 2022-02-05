@@ -93,3 +93,4 @@ Major credits to valclient and the valorant-api-docs, for making my life easier
 * [valclient](https://github.com/colinhartigan/valclient.py)
 * [valorant-api-docs](https://github.com/techchrism/valorant-api-docs)
 
+This project is intended for personal use only, and is not affiliated with Riot Games in any way. Images of maps, weapons, agents, etc. are all property of Valorant and Riot Games.
